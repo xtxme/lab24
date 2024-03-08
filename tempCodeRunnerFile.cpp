@@ -1,23 +1,10 @@
-line_up.push_back("Luffy");
-	line_up.push_back("Sanji");
-	line_up.push_back("Nami");
+int count(int a[],int n){
+	set<int> x;
 
-	line_up.pop_front();
-	line_up.pop_front();
-	loc = find (line_up.begin(),line_up.end(),"Sanji");
-	line_up.insert(loc,"Narutu");
-
-	line_up.push_front("Prayath");
-	loc = find(line_up.begin(),line_up.end(),"Bob");
-	line_up.insert(loc,"Tony");
-
-	loc = line_up.begin();
-	loc++;
-	line_up.erase(loc);
-	line_up.pop_front();
-	line_up.pop_front();
-	line_up.pop_front();
+	for (int i = 0; i < n; i++)
+	{
+		x.insert(a[i]);
+	}
+	return x.size();
 	
-	
-	printList(line_up);
-		
+}
